@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     tableCell.className = "cell";
     table.appendChild(tableCell);
   }
+  const secondTable = document.getElementById("secondTable");
+  for (i = 1; i <= 24; i++) {
+    const secondTableCell = document.createElement("div");
+    secondTableCell.textContent = i;
+    secondTableCell.className = "secondCell";
+    secondTable.appendChild(secondTableCell);
+  }
+
   const randomButton = document.getElementById("bottone");
   randomButton.addEventListener("click", function (event) {
     let randomNum = Math.floor(Math.random() * 99) + 1;
@@ -20,11 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
       p.textContent += "," + (randomNum + 1);
     }
   });
-  const secondTable = document.getElementById("secondtable");
-  for (i = 1; i <= 24; i++) {
-    const secondTableCell = document.createElement("div");
-    secondTableCell.textContent = i;
-    secondTableCell.className = "secondCell";
-    secondTable.appendChild(secondTableCell);
-  }
 });
