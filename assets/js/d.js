@@ -1,23 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const table = document.getElementById("tabella");
 
-  for (i = 1; i <= 99; i++) {
+  for (i = 1; i <= 90; i++) {
     const tableCell = document.createElement("div");
     tableCell.textContent = i;
     tableCell.className = "cell";
     table.appendChild(tableCell);
   }
-  const secondTable = document.getElementById("secondTable");
-  for (i = 1; i <= 24; i++) {
-    const secondTableCell = document.createElement("div");
-    secondTableCell.textContent = i;
-    secondTableCell.className = "secondCell";
-    secondTable.appendChild(secondTableCell);
-  }
 
   const randomButton = document.getElementById("bottone");
   randomButton.addEventListener("click", function (event) {
-    let randomNum = Math.floor(Math.random() * 99) + 1;
+    let randomNum = Math.floor(Math.random() * 90) + 1;
     const cellIndex = table.children[randomNum];
     cellIndex.classList.add("background");
 
@@ -28,4 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
       p.textContent += "," + (randomNum + 1);
     }
   });
+
+  const secondTable = document.getElementById("secondTable");
+
+  for (i = 1; i <= 24; i++) {
+    const secondTableCell = document.createElement("div");
+    secondTableCell.textContent = i;
+    secondTableCell.className = "secondCell";
+    secondTable.appendChild(secondTableCell);
+  }
 });
