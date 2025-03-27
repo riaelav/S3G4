@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const secondTable = document.getElementById("secondTable");
+  const secondTable = document.getElementById("secondtable");
 
   for (i = 1; i <= 24; i++) {
     const secondTableCell = document.createElement("div");
-    secondTableCell.textContent = i;
+    let randomNum = Math.floor(Math.random() * 90) + 1;
+    secondTableCell.textContent = randomNum;
     secondTableCell.className = "secondCell";
     secondTable.appendChild(secondTableCell);
   }
