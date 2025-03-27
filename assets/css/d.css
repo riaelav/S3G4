@@ -1,0 +1,38 @@
+#tabella {
+  width: 420px;
+  font-size: 0;
+  margin: auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: inline-block;
+  border: 1px solid rgb(208, 203, 203);
+  font-size: 1rem;
+}
+
+button {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(216, 220, 225);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+section {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.background {
+  background-color: rgb(38, 120, 192);
+  font-weight: bold;
+}
